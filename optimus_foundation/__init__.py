@@ -36,5 +36,5 @@ SCRIPT_FILES = [
     ['sources/templates/base.html', 'sources/templates/base.html'],
     ['sources/templates/index.html', 'sources/templates/index.html'],
     ['sources/templates/readme.html', 'sources/templates/readme.html'],
-    ['sources/css/screen.css', 'sources/css/screen.css'],
+    ['sources/css/app.css', 'sources/css/app.css'],
 ]

@@ -1,3 +1,3 @@
 """
-Optimus project '{PROJECT_NAME}'
+Optimus project '$PROJECT_NAME'
 """

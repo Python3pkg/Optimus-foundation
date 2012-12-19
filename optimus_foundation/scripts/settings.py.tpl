@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Settings file for {PROJECT_NAME}
+Settings file for $PROJECT_NAME
 """
 import os
 
@@ -12,7 +12,7 @@ DEBUG = True
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 # Common site name and domain to use available in templates
-SITE_NAME = '{PROJECT_NAME}'
+SITE_NAME = '$PROJECT_NAME'
 SITE_DOMAIN = 'localhost'
 
 # Sources directory where the assets will be searched
@@ -34,16 +34,16 @@ WEBASSETS_CACHE = os.path.join(PROJECT_DIR, '.webassets-cache')
 STATIC_URL = 'static/'
 
 # ReSTructuredText parser settings to use when building a RST document
-RST_PARSER_SETTINGS = {{
+RST_PARSER_SETTINGS = {
     'initial_header_level': 3,
     'file_insertion_enabled': True,
     'raw_enabled': False,
     'footnote_references': 'superscript',
     'doctitle_xform': False,
-}}
+}
 
 # Extra or custom bundles
-EXTRA_BUNDLES = {{
+EXTRA_BUNDLES = {
     'app_css': Bundle(
         'css/app.css',
         filters='yui_css',
@@ -78,7 +78,7 @@ EXTRA_BUNDLES = {{
         filters='yui_js',
         output='js/app.min.js'
     ),
-}}
+}
 # Enabled bundles to use
 ENABLED_BUNDLES = ('app_css', 'modernizr_js', 'app_js')
 
@@ -98,3 +98,23 @@ JINJA_EXTENSIONS = (
 
 # This will search for a ``pages`` module that contains page objects
 PAGES_MAP = "pages"
+
+# These are the default watcher settings, you can customize them if you want, uncomment 
+# parts you want to change, usually you'll change only the "pattern" values
+# You don't need to uncomment this if you want to use the watcher with these default 
+# parameters
+
+# Templates watcher settings
+#WATCHER_TEMPLATES_PATTERNS = {
+    #'patterns': ['*.html'],
+    #'ignore_patterns': None,
+    #'ignore_directories': False,
+    #'case_sensitive': False,
+#}
+# Assets watcher settings
+#WATCHER_ASSETS_PATTERNS = {
+    #'patterns': ['*.css', '*.js'],
+    #'ignore_patterns': None,
+    #'ignore_directories': False,
+    #'case_sensitive': False,
+#}

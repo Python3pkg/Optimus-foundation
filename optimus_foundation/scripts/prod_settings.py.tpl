@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Production settings file for optimus_foundation
+Production settings file for project '$PROJECT_NAME'
 """
-from optimus_foundation.settings import *
+from ${PROJECT_NAME}.settings import *
 
 DEBUG = False
 
