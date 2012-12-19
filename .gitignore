@@ -1,0 +1,12 @@
+#buildout's specific
+.installed.cfg
+eggs/*
+build/*
+dist/*
+
+#egg's specific
+*.egg-info
+
+#defaults
+*.pyc
+*.pyo
