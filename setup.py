@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Optimus-foundation',
+    name='Optimus_foundation',
     version=__import__('optimus_foundation').__version__,
     description=__import__('optimus_foundation').__doc__,
     long_description=open('README.rst').read(),
     author='David Thenon',
     author_email='sveetch@gmail.com',
-    url='http://pypi.python.org/pypi/Optimus-foundation',
+    url='http://pypi.python.org/pypi/Optimus_foundation',
     license='MIT',
     packages=find_packages(),
     classifiers=[
