@@ -1,7 +1,7 @@
 """
 This is an Optimus template project for Foundation, the version will follow the version of Foundation
 """
-__version__ = "3.2.3"
+__version__ = "3.2.5"
 
 # Directory structure to create
 DIRECTORY_STRUCTURE = [
@@ -44,6 +44,7 @@ SCRIPT_FILES = [
     ['gemsets.txt', 'gemsets.txt'],
     ['README.rst', 'README.rst'],
     # Default scripts
+    ['scripts/gitignore.tpl', '.gitignore'],
     ['scripts/__init__.py.tpl', '__init__.py'],
     ['scripts/settings.py.tpl', 'settings.py'],
     ['scripts/prod_settings.py.tpl', 'prod_settings.py'],

@@ -4,7 +4,6 @@ Settings file for $PROJECT_NAME
 """
 import os
 
-# Uncomment this if you want to add some custom bundles
 from webassets import Bundle
 
 DEBUG = True
@@ -80,7 +79,7 @@ EXTRA_BUNDLES = {
     ),
 }
 # Enabled bundles to use
-ENABLED_BUNDLES = ('app_css', 'modernizr_js', 'app_js')
+ENABLED_BUNDLES = EXTRA_BUNDLES.keys()
 
 # Sources files or directory to synchronize within the static directory
 # This is usually used to put on some assets in the static directory, like images.

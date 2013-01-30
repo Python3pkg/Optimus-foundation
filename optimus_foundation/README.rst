@@ -97,9 +97,20 @@ It is recommanded to simply use the *watch* action command from `Compass`_ to wa
 Pages
 *****
 
-The pages to build are registred as ``Page`` object usually in a ``pages.py`` file in your project. It must contains a ``PAGES`` variable that is a list of all page to build.
+The pages to build are registred as ``Page`` object usually in a ``pages.py`` file in your project. It must contains a ``PAGES`` variable that is a list containing ``Page`` instances.
 
-This list contains ``Page`` instances, see ``optimus.builder.pages`` to understand how you can manage your content, templates, etc..
+A default project is allready shipped with a ``pages.py`` containing some samples pages, you can change them, inherit them or add another to build various pages.
+
+Default ``PageViewBase`` instance add some variable to his template context :
+
+* **page_title** that contains the value of ``PageViewBase.title`` attribute;
+* **page_destination** that contains the value of ``PageViewBase.destination`` attribute;
+* **page_lang** that contains the value of ``PageViewBase.page_lang`` attribute;
+* **page_template_name** that contains the value of ``PageViewBase.template_name`` attribute;
+
+All these attribute are finded using a ``PageViewBase.get_***`` method that you can override in your ``PageViewBase`` object.
+
+See ``optimus.builder.pages`` to see more detail on how it works..
 
 Building
 ********
