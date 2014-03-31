@@ -1,7 +1,7 @@
 """
 This is an Optimus template project for Foundation, the version will follow the version of Foundation
 """
-__version__ = "3.2.5"
+__version__ = "3.2.5.1"
 
 # Directory structure to create
 DIRECTORY_STRUCTURE = [
@@ -40,10 +40,10 @@ FILES_TO_SYNC = (
 #       all your '{' and '}', else they will be interpreted as format variable, and 
 #       probably raise a Key error
 SCRIPT_FILES = [
-    ['requirements.txt', 'requirements.txt'],
     ['gemsets.txt', 'gemsets.txt'],
     ['README.rst', 'README.rst'],
     # Default scripts
+    ['scripts/babel.cfg.tpl', 'babel.cfg'],
     ['scripts/gitignore.tpl', '.gitignore'],
     ['scripts/__init__.py.tpl', '__init__.py'],
     ['scripts/settings.py.tpl', 'settings.py'],
