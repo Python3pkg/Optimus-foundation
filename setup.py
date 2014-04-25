@@ -23,7 +23,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     install_requires=[
-        'Optimus>=0.6.4',
+        'Optimus >= 0.6.4',
     ],
     include_package_data=True,
     zip_safe=False
